@@ -1,13 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
-import Item1 from '../assets/image/Item.png'
+import Item1 from '../assets/image/Link → 3-330x440.jpg.png'
 import Item2 from '../assets/image/Item (1).png'
 import Item3 from '../assets/image/Item (2).png'
 import Item4 from '../assets/image/Item (3).png'
 import Color1 from "../assets/image/span.color-variation.png"
 import Color2 from "../assets/image/span.color-variation (1).png"
-import Card1 from "../assets/image/Link → banner-26.png.png"
-import Card2 from "../assets/image/Link → banner-27.jpg.png"
+import Cardimg from "../assets/image/Link → banner-26.png.png"
+import Cardimg1 from "../assets/image/Link → banner-27.jpg.png"
+import Cardvireimg from "../assets/image/Link → banner-28.png.png"
+import Link1 from "../assets/image/Link.png"
+import Link2 from "../assets/image/Link (1).png"
+import Link3 from "../assets/image/Vector.png"
+import Link4 from "../assets/image/Vector (1).png"
+import Link5 from "../assets/image/Link (2).png"
+import Link6 from "../assets/image/Link (3).png"
 
 const Products = () => {
   return (
@@ -104,17 +111,88 @@ your ideas to life</Qut>
                 </TEXTCONTAIN>
                 <Cardcons>
                     <Gridcard>
-                        <Card1></Card1>
-                        <Card2></Card2>
-                        <Card3></Card3>
-                        <Card4></Card4>
-                        <Card5></Card5>
-                        <Card6></Card6>
+                        <Card1>
+                            
+                                <img src={Link1} alt="" />
+                            
+                            <Ichd>NO Die & plate
+charges</Ichd>
+                            <Icp>Lorem ipsum det, cowec
+tetur duis necgi det, consect
+eturlagix adipiscing eliet duis
+necgi det, con</Icp>
+                        </Card1>
+                        <Card2>
+                              
+                                <img src={Link2} alt="" />
+                            
+                            <Ichd>High quality offset
+printing</Ichd>
+                            <Icp>Lorem ipsum det, cowec
+tetur duis necgi det, consect
+eturlagix adipiscing eliet duis
+necgi det, con</Icp>
+                        </Card2>
+                        <Card3>
+                              
+                                <img src={Link3} alt="" />
+                            
+                            <Ichd>Secure payment</Ichd>
+                            <Icp>Lorem ipsum det, cowec
+tetur duis necgi det, consect
+eturlagix adipiscing eliet duis
+necgi det, con</Icp>
+                        </Card3>
+                        <Card4>
+                              
+                                <img src={Link4} alt="" />
+                            
+                            <Ichd>Custom size & style</Ichd>
+                            <Icp>Lorem ipsum det, cowec
+tetur duis necgi det, consect
+eturlagix adipiscing eliet dui</Icp>
+                        </Card4>
+                        <Card5>
+                             
+                                <img src={Link5} alt="" />
+                            
+                            <Ichd>Fast & free delivery</Ichd>
+                            <Icp>Lorem ipsum det, cowec
+tetur duis necgi det, consect
+eturlagix adipiscing</Icp>
+                        </Card5>
+                        <Card6>
+  
+                                <img src={Link6} alt="" />
+                             
+                            <Ichd>Low minimum order quantity</Ichd>
+                            <Icp>Lorem ipsum det, cowec
+tetur duis necgi det, consect
+eturlagix adipiscing eliet duis
+necgi det, con</Icp>
+                        </Card6> 
 
                     </Gridcard>
+                                       <Cardview>
+                    <Bagtext>
+                    <Create>
+                        Create your own
+custom products online!
+                    </Create>
+                    <Freebag>
+                        Free and easy way to bring your ideas to life
+                    </Freebag>
+                    <Butcus>
+                        Order Custom Shirts
+                    </Butcus>
+                    </Bagtext>
+                </Cardview>
                 </Cardcons>
+                
             </Subcontains>
+ 
         </Maincontains1>
+
     </Maincontains>
 
    
@@ -158,6 +236,7 @@ const Cards =styled.div`
 
 img{
     padding: 0 8px 0 5px;
+    border-radius: 15px;
 }
 
     
@@ -195,7 +274,7 @@ const Cardview1 =styled.div`
      width: 630px;
     height: 360px;
     align-content: center;
-    background-image: url(${Card1});
+    background-image: url(${Cardimg});
     background-size: cover;
     margin: 20px;
     border-radius: 10px;
@@ -208,7 +287,7 @@ const Cardview2 =styled.div`
      width: 630px;
     height: 360px;
     align-content: center;
-    background-image: url(${Card2});
+    background-image: url(${Cardimg1});
     background-size: cover;
     margin: 20px;
     border-radius: 10px;
@@ -225,6 +304,205 @@ const Qut=styled.p`
 const BUTTONS=styled.button`
     background-color: #2EBB77;
 `
+const Maincontains1=styled.div`
+    display: flex;
+    flex-direction: column;
+  
+    width: auto;
+    height: auto;
+    
+`
+const Subcontains=styled.div`
+    display: flex;
+    
+    gap: 10px;
+    margin: 0;
+    align-items: baseline;
+    width: 100%;
+`
+const Cardcons=styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    
+`
+const Gridcard=styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 258px);
+  gap: 20px;
+  
+  
+
+`
+const Card6=styled.div`
+  background-color: #f4efef;
+  color: black;
+  width: 218px;
+  height: 300px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+
+
+  img{
+    width: 53px;
+    height: 53px;
+  }
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* On hover: stronger shadow */
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+`
+const Card5=styled.div`
+  background-color: #f4efef;
+  color: black;
+  width: 218px;
+  height: 300px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+   img{
+    width: 53px;
+    height: 53px;
+  }
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* On hover: stronger shadow */
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+`
+const Card4=styled.div`
+  background-color: #f4efef;
+  color: black;
+  width: 218px;
+  height: 300px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+  img{
+    width: 53px;
+    height: 53px;
+  }
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* On hover: stronger shadow */
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+`
+const Card3=styled.div`
+  background-color: #f4efef;
+  color: black;
+  width: 218px;
+  height: 300px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+  img{
+    width: 53px;
+    height: 53px;
+  }
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* On hover: stronger shadow */
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+`
+const Card2=styled.div`
+ background-color: #f4efef;
+  color: black;
+  width: 218px;
+  height: 300px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+  img{
+    width: 53px;
+    height: 53px;
+  }
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* On hover: stronger shadow */
+    transform: translateY(-7px); /* Slight lift on hover */
+  }
+`
+const Card1=styled.div`
+  background-color: #f4efef;
+  color: black;
+  width: 218px;
+  height: 300px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+   /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); */
+   img{
+    width: 53px;
+    height: 53px;
+  }
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* On hover: stronger shadow */
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+`
+
+const Icon=styled.img`
+    
+`
+const Ichd=styled.h2`
+    
+`
+const Icp=styled.p`
+    
+`
+const TEXTCONTAIN=styled.div`
+    width: 500px;
+    
+`
+const Customize=styled.h1`
+    
+`
+const Pa =styled.p`
+    width: 60%;
+    font-size: medium;
+    font-size: 18px;
+    color: gray;
+`
+const Buts=styled.button`
+ background-color: #2EBB77;
+`
+const Cardview= styled.div`
+    background: url(${Cardvireimg});
+    width: 810px;
+    height: 277px;
+    display: flex;
+    border-radius: 10px;
+    
+`
+const Bagtext=styled.div`
+    width: 50%;
+    margin: 30px 40px;
+
+`
+const Create=styled.h2`
+    
+`
+const Freebag=styled.p`
+    
+`
+const Butcus=styled.button`
+    background-color: #2EBB77;
+`
+
+
 
 
 

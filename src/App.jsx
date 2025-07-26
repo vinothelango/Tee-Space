@@ -5,6 +5,8 @@ import Middle from './components/Middle'
 import Cards from './components/Cards'
 import Glosory from './components/Glosory'
 import Products from './components/Products'
+import Resources from './components/Resources'
+import Testmonial from './components/Testmonial'
 
 const App = () => {
   return (
@@ -15,6 +17,8 @@ const App = () => {
     <Cards/>
     <Glosory/>
     <Products/>
+    <Resources/>
+    <Testmonial/>
     </div>
   )
 }
