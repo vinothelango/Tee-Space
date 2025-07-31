@@ -7,6 +7,8 @@ import Glosory from './components/Glosory'
 import Products from './components/Products'
 import Resources from './components/Resources'
 import Testmonial from './components/Testmonial'
+import Vacation from './components/Vacation'
+import Social from './components/Social'
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
     <Products/>
     <Resources/>
     <Testmonial/>
+    <Vacation/>
+    <Social/>
     </div>
   )
 }
