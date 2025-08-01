@@ -9,6 +9,7 @@ import Resources from './components/Resources'
 import Testmonial from './components/Testmonial'
 import Vacation from './components/Vacation'
 import Social from './components/Social'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
     <Testmonial/>
     <Vacation/>
     <Social/>
+    <Footer/>
     </div>
   )
 }
