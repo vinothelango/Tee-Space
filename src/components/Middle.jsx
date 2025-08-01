@@ -4,16 +4,20 @@ import Feedly from '../assets/image/Item → logo-feedly.png.png'
 import Lattice from '../assets/image/Item → Link → logo-lattice.png.png'
 import Hopin from '../assets/image/Item → logo-hopin.png.png'
 import Upwork from '../assets/image/Item → Link → logo-upwork.png.png'
-import styled from 'styled-components'
+import styled,{keyframes} from 'styled-components'
 
 const Middle = () => {
   return (
     <Maincontainer>
+      
         <Para>
             “We've got custom T-shirts in a range of fits and sizes, so
              everyone can wear your brand or message.”
         </Para>
+         <MarqueeWrapper>
+        <MarqueeContent>
         <Subcontainers>
+          
             <img src={Spoti} alt="" />
             <img src={Feedly} alt="" />
             <img src={Lattice} alt="" />
@@ -21,6 +25,8 @@ const Middle = () => {
             <img src={Upwork} alt="" />
             <img src={Hopin} alt="" />
         </Subcontainers>
+        </MarqueeContent>
+        </MarqueeWrapper>
     </Maincontainer>
   )
 }
@@ -57,7 +63,22 @@ const Subcontainers = styled.div`
     transition: opacity 0.3s ease;
 
     &:hover {
-      opacity: 10;
+      opacity: 2;
     }
   }
 `;
+const scroll=keyframes`
+  0%{transform:translateX(0)}
+  100%{transform:translateX(-100%)}
+
+`
+const MarqueeWrapper=styled.div`
+  width: 100%;
+  overflow: hidden;
+`
+
+const MarqueeContent=styled.div`
+    display: flex;
+  width: fit-content;
+  animation: ${scroll} 20s linear infinite;
+`

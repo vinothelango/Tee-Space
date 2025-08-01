@@ -5,7 +5,7 @@ import Img3 from '../assets/image/banner-decor-22.jpg.png'
 import Img4 from '../assets/image/banner-decor-24.jpg.png'
 import Img5 from '../assets/image/banner-decor-25.jpg.png'
 import Img6 from '../assets/image/banner-decor-26.jpg.png'
-import styled from 'styled-components'
+import styled,{keyframes} from 'styled-components'
 
 
 const Vacation = () => {
@@ -52,6 +52,27 @@ const Vacation = () => {
 
 
 export default Vacation
+const fadeSlideUp=keyframes`
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+`
+const float = keyframes`
+  0%{transform: translatey(0px);}
+  50% {transform: translatey(-10px);}
+  100% {transform: translatey(0px);}
+`
+const fadeIn = keyframes`
+  from{opacity:0;}
+  to{opacity:1}
+
+`
+
 
 const Maincontent=styled.div`
   display: flex;
@@ -82,6 +103,8 @@ const Imgbox2=styled.div`
     height: 210px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: ${fadeSlideUp} 1.5s ease-out;
+    animation: ${fadeIn} 2s ease forwards, ${float} 5s ease-in-out infinite;
   }
 
 `
@@ -93,6 +116,8 @@ const Imgbox3=styled.div`
   img{
     border-radius: 10px 0 0 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: ${fadeSlideUp} 1.5s ease-out;
+    animation: ${fadeIn} 2s ease forwards, ${float} 5s ease-in-out infinite;
   }
 `
 const Imgbox4=styled.div`
@@ -103,6 +128,8 @@ const Imgbox4=styled.div`
  img{
   border-radius:0 10px 10px 0 ;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: ${fadeSlideUp} 1.5s ease-out;
+  animation: ${fadeIn} 1s ease forwards, ${float} 4s ease-in-out infinite;
  }
 `
 const Imgbox5=styled.div`
@@ -112,6 +139,8 @@ const Imgbox5=styled.div`
   img{
     border-radius: 0 0 10px 10px ;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: ${fadeSlideUp} 1.5s ease-out;
+    animation: ${fadeIn} 1s ease forwards, ${float} 4s ease-in-out infinite;
   }
 `
 const Imgbox6=styled.div`
@@ -122,6 +151,8 @@ const Imgbox6=styled.div`
   img{
     border-radius: 10px 10px 0 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: ${fadeSlideUp} 1.5s ease-out;
+    animation: ${fadeIn} 1s ease forwards, ${float} 4s ease-in-out infinite;
   }
 `
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled,{keyframes} from 'styled-components'
 import Item1 from '../assets/image/Link → 3-330x440.jpg.png'
 import Item2 from '../assets/image/Item (1).png'
 import Item3 from '../assets/image/Item (2).png'
@@ -202,6 +202,17 @@ custom products online!
 
 export default Products
 
+const fadeSlideUp=keyframes`
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+`
+
 
 const Maincontains=styled.div`
     display: flex;
@@ -237,6 +248,7 @@ const Cards =styled.div`
 img{
     padding: 0 8px 0 5px;
     border-radius: 15px;
+    animation: ${fadeSlideUp} 1.5s ease-out;
 }
 
     
